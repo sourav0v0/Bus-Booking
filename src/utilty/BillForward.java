@@ -12,8 +12,8 @@ import javax.mail.internet.MimeMessage;
 
 public class BillForward {
 	 public static boolean send(String to,String msg){     
-		 String from="javajava0v0@gmail.com";
-		 String password="java@111";
+		 String from=""; // Email id and passowrd
+		 String password=""; // Email id and passowrd
          Properties props = new Properties();    
          props.put("mail.smtp.host", "smtp.gmail.com");    
          props.put("mail.smtp.socketFactory.port", "465");    
@@ -25,7 +25,7 @@ public class BillForward {
          Session session = Session.getInstance(props,    
           new javax.mail.Authenticator() {    
           protected PasswordAuthentication getPasswordAuthentication() {    
-          return new PasswordAuthentication("souravprajapati31@gmail.com","Souravs+-");  
+          return new PasswordAuthentication("","");  // Email id and passowrd
           }    
          });    
          //compose message    
@@ -44,7 +44,5 @@ public class BillForward {
         	 return false;}    
             
    }  
-  public static void main(String[] args) {
-	System.out.println(send("souravprajapati31@gmail.com", "HEllo"));
-}
+ 
 }
