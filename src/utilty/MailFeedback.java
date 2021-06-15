@@ -13,8 +13,8 @@ import javax.mail.internet.MimeMessage;
 public class MailFeedback {
 	 public static boolean send(String to,String sub,String msg){  
          //Get properties object    
-		 String from="javajava0v0@gmail.com";
-		 String password="java@111";
+		 String from=""; // Email id and passowrd
+		 String password=""; // Email id and passowrd
          Properties props = new Properties();    
          props.put("mail.smtp.host", "smtp.gmail.com");    
          props.put("mail.smtp.socketFactory.port", "465");    
